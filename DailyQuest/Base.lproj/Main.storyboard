@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cVL-zR-Zq2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--달성 현황-->
+        <scene sceneID="AkT-gn-jjY">
+            <objects>
+                <viewController id="Oqm-AM-hwS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qbp-qj-6VH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="na5-rI-6en"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="달성 현황" image="calendar.badge.exclamationmark" catalog="system" id="UOa-Ip-0c9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5X-ge-QRR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="317"/>
+        </scene>
+        <!--설정-->
+        <scene sceneID="imb-xB-cKx">
+            <objects>
+                <viewController id="g2r-xR-3vc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9lY-sd-1FL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aNT-bd-TC2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="설정" image="gearshape" catalog="system" id="uJf-gz-eqe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00J-jt-Vna" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="317"/>
+        </scene>
+        <!--일일 퀘스트-->
+        <scene sceneID="eLl-yw-Zkv">
+            <objects>
+                <viewController id="Vww-oE-NOt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcU-8Q-fIo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8월 3일 화요일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST3-ip-LSz">
+                                <rect key="frame" x="88" y="44" width="239" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aKa-ho-CSW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="일일 퀘스트" image="doc.plaintext" catalog="system" id="D3U-CM-0w1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3bj-uA-QD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="318"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZRR-5s-K8j">
+            <objects>
+                <tabBarController id="cVL-zR-Zq2" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rys-pi-vTG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Vww-oE-NOt" kind="relationship" relationship="viewControllers" id="IML-Gz-MUI"/>
+                        <segue destination="Oqm-AM-hwS" kind="relationship" relationship="viewControllers" id="iNV-0p-zh2"/>
+                        <segue destination="g2r-xR-3vc" kind="relationship" relationship="viewControllers" id="lve-BR-dWJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lh2-Td-B9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="-379"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar.badge.exclamationmark" catalog="system" width="128" height="108"/>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

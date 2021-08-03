@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B5B114BC62DE03A5F71E821 /* Pods_DailyQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B9293AE36A3A2DB9F50D39 /* Pods_DailyQuest.framework */; };
+		7B5C8EBC26B9007C004E6ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C8EBB26B9007C004E6ADE /* AppDelegate.swift */; };
+		7B5C8EBE26B9007C004E6ADE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C8EBD26B9007C004E6ADE /* SceneDelegate.swift */; };
+		7B5C8EC026B9007C004E6ADE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C8EBF26B9007C004E6ADE /* ViewController.swift */; };
+		7B5C8EC326B9007C004E6ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C8EC126B9007C004E6ADE /* Main.storyboard */; };
+		7B5C8EC526B9007E004E6ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C8EC426B9007E004E6ADE /* Assets.xcassets */; };
+		7B5C8EC826B9007E004E6ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C8EC626B9007E004E6ADE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0683865FF5C5A795755411DD /* Pods-DailyQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyQuest.release.xcconfig"; path = "Target Support Files/Pods-DailyQuest/Pods-DailyQuest.release.xcconfig"; sourceTree = "<group>"; };
+		78B9293AE36A3A2DB9F50D39 /* Pods_DailyQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5C8EB826B9007C004E6ADE /* DailyQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5C8EBB26B9007C004E6ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B5C8EBD26B9007C004E6ADE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7B5C8EBF26B9007C004E6ADE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B5C8EC226B9007C004E6ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B5C8EC426B9007E004E6ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B5C8EC726B9007E004E6ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B5C8EC926B9007E004E6ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC63A666116C17A3B9D2F62 /* Pods-DailyQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyQuest.debug.xcconfig"; path = "Target Support Files/Pods-DailyQuest/Pods-DailyQuest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B5C8EB526B9007C004E6ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B5B114BC62DE03A5F71E821 /* Pods_DailyQuest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E96485C05A014420ED68793 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78B9293AE36A3A2DB9F50D39 /* Pods_DailyQuest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B5C8EAF26B9007C004E6ADE = {
+			isa = PBXGroup;
+			children = (
+				7B5C8EBA26B9007C004E6ADE /* DailyQuest */,
+				7B5C8EB926B9007C004E6ADE /* Products */,
+				B0D37B6C2BD29B6F08D49A5B /* Pods */,
+				5E96485C05A014420ED68793 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B5C8EB926B9007C004E6ADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C8EB826B9007C004E6ADE /* DailyQuest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B5C8EBA26B9007C004E6ADE /* DailyQuest */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C8EBB26B9007C004E6ADE /* AppDelegate.swift */,
+				7B5C8EBD26B9007C004E6ADE /* SceneDelegate.swift */,
+				7B5C8EBF26B9007C004E6ADE /* ViewController.swift */,
+				7B5C8EC126B9007C004E6ADE /* Main.storyboard */,
+				7B5C8EC426B9007E004E6ADE /* Assets.xcassets */,
+				7B5C8EC626B9007E004E6ADE /* LaunchScreen.storyboard */,
+				7B5C8EC926B9007E004E6ADE /* Info.plist */,
+			);
+			path = DailyQuest;
+			sourceTree = "<group>";
+		};
+		B0D37B6C2BD29B6F08D49A5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDC63A666116C17A3B9D2F62 /* Pods-DailyQuest.debug.xcconfig */,
+				0683865FF5C5A795755411DD /* Pods-DailyQuest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B5C8EB726B9007C004E6ADE /* DailyQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5C8ECC26B9007E004E6ADE /* Build configuration list for PBXNativeTarget "DailyQuest" */;
+			buildPhases = (
+				88E825345E2A5C4D2EF547A2 /* [CP] Check Pods Manifest.lock */,
+				7B5C8EB426B9007C004E6ADE /* Sources */,
+				7B5C8EB526B9007C004E6ADE /* Frameworks */,
+				7B5C8EB626B9007C004E6ADE /* Resources */,
+				501A1D39E77F1D9D2C38FD04 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyQuest;
+			productName = DailyQuest;
+			productReference = 7B5C8EB826B9007C004E6ADE /* DailyQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B5C8EB026B9007C004E6ADE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7B5C8EB726B9007C004E6ADE = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 7B5C8EB326B9007C004E6ADE /* Build configuration list for PBXProject "DailyQuest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B5C8EAF26B9007C004E6ADE;
+			productRefGroup = 7B5C8EB926B9007C004E6ADE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B5C8EB726B9007C004E6ADE /* DailyQuest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B5C8EB626B9007C004E6ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5C8EC826B9007E004E6ADE /* LaunchScreen.storyboard in Resources */,
+				7B5C8EC526B9007E004E6ADE /* Assets.xcassets in Resources */,
+				7B5C8EC326B9007C004E6ADE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		501A1D39E77F1D9D2C38FD04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyQuest/Pods-DailyQuest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyQuest/Pods-DailyQuest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DailyQuest/Pods-DailyQuest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88E825345E2A5C4D2EF547A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyQuest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B5C8EB426B9007C004E6ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5C8EC026B9007C004E6ADE /* ViewController.swift in Sources */,
+				7B5C8EBC26B9007C004E6ADE /* AppDelegate.swift in Sources */,
+				7B5C8EBE26B9007C004E6ADE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B5C8EC126B9007C004E6ADE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B5C8EC226B9007C004E6ADE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B5C8EC626B9007E004E6ADE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B5C8EC726B9007E004E6ADE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B5C8ECA26B9007E004E6ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B5C8ECB26B9007E004E6ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B5C8ECD26B9007E004E6ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC63A666116C17A3B9D2F62 /* Pods-DailyQuest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MPMHNJMTGA;
+				INFOPLIST_FILE = DailyQuest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DailyQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B5C8ECE26B9007E004E6ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0683865FF5C5A795755411DD /* Pods-DailyQuest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MPMHNJMTGA;
+				INFOPLIST_FILE = DailyQuest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DailyQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B5C8EB326B9007C004E6ADE /* Build configuration list for PBXProject "DailyQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5C8ECA26B9007E004E6ADE /* Debug */,
+				7B5C8ECB26B9007E004E6ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B5C8ECC26B9007E004E6ADE /* Build configuration list for PBXNativeTarget "DailyQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5C8ECD26B9007E004E6ADE /* Debug */,
+				7B5C8ECE26B9007E004E6ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B5C8EB026B9007C004E6ADE /* Project object */;
+}
