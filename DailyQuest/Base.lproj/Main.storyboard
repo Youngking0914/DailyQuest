@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cVL-zR-Zq2">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -14,23 +14,36 @@
             <objects>
                 <viewController id="Oqm-AM-hwS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qbp-qj-6VH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmQ-KQ-Xtz" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="45" width="390" height="357.66666666666669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="na5-rI-6en"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PmQ-KQ-Xtz" firstAttribute="centerX" secondItem="Qbp-qj-6VH" secondAttribute="centerX" id="EgZ-7B-EZN"/>
+                            <constraint firstItem="PmQ-KQ-Xtz" firstAttribute="trailing" secondItem="na5-rI-6en" secondAttribute="trailing" id="H5c-JP-oaI"/>
+                            <constraint firstItem="PmQ-KQ-Xtz" firstAttribute="bottom" secondItem="na5-rI-6en" secondAttribute="centerY" id="cCW-Xz-oZN"/>
+                            <constraint firstItem="PmQ-KQ-Xtz" firstAttribute="top" secondItem="na5-rI-6en" secondAttribute="top" constant="1" id="crL-os-auj"/>
+                            <constraint firstItem="PmQ-KQ-Xtz" firstAttribute="leading" secondItem="na5-rI-6en" secondAttribute="leading" id="tMp-Uk-RIB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="달성 현황" image="calendar.badge.exclamationmark" catalog="system" id="UOa-Ip-0c9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5X-ge-QRR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26" y="317"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="316.74107142857139"/>
         </scene>
         <!--설정-->
         <scene sceneID="imb-xB-cKx">
             <objects>
                 <viewController id="g2r-xR-3vc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9lY-sd-1FL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="aNT-bd-TC2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,12 +59,11 @@
             <objects>
                 <viewController id="Vww-oE-NOt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vcU-8Q-fIo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8월 3일 화요일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST3-ip-LSz">
-                                <rect key="frame" x="88" y="44" width="239" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8월 3일 화요일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST3-ip-LSz">
+                                <rect key="frame" x="105" y="49" width="180" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,12 +71,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aKa-ho-CSW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ST3-ip-LSz" firstAttribute="top" secondItem="aKa-ho-CSW" secondAttribute="top" constant="5" id="4dQ-F9-X9Q"/>
+                            <constraint firstItem="ST3-ip-LSz" firstAttribute="centerX" secondItem="aKa-ho-CSW" secondAttribute="centerX" id="xYX-oC-rKt"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="일일 퀘스트" image="doc.plaintext" catalog="system" id="D3U-CM-0w1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bj-uA-QD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-652" y="318"/>
+            <point key="canvasLocation" x="-653.84615384615381" y="317.06161137440756"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZRR-5s-K8j">
