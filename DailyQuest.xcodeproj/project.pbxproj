@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -71,15 +71,47 @@
 		7B5C8EBA26B9007C004E6ADE /* DailyQuest */ = {
 			isa = PBXGroup;
 			children = (
-				7B5C8EBB26B9007C004E6ADE /* AppDelegate.swift */,
-				7B5C8EBD26B9007C004E6ADE /* SceneDelegate.swift */,
-				7B5C8EBF26B9007C004E6ADE /* ViewController.swift */,
-				7B5C8EC126B9007C004E6ADE /* Main.storyboard */,
-				7B5C8EC426B9007E004E6ADE /* Assets.xcassets */,
-				7B5C8EC626B9007E004E6ADE /* LaunchScreen.storyboard */,
 				7B5C8EC926B9007E004E6ADE /* Info.plist */,
+				7B5C8EDA26BB8764004E6ADE /* Delegates */,
+				7B5C8ED926BB8736004E6ADE /* Resources */,
+				7B5C8EDB26BB8780004E6ADE /* Views */,
+				7B5C8ED826BB7245004E6ADE /* Controllers */,
 			);
 			path = DailyQuest;
+			sourceTree = "<group>";
+		};
+		7B5C8ED826BB7245004E6ADE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C8EBF26B9007C004E6ADE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7B5C8ED926BB8736004E6ADE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C8EC426B9007E004E6ADE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7B5C8EDA26BB8764004E6ADE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C8EBB26B9007C004E6ADE /* AppDelegate.swift */,
+				7B5C8EBD26B9007C004E6ADE /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7B5C8EDB26BB8780004E6ADE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C8EC126B9007C004E6ADE /* Main.storyboard */,
+				7B5C8EC626B9007E004E6ADE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B0D37B6C2BD29B6F08D49A5B /* Pods */ = {
@@ -88,7 +120,6 @@
 				CDC63A666116C17A3B9D2F62 /* Pods-DailyQuest.debug.xcconfig */,
 				0683865FF5C5A795755411DD /* Pods-DailyQuest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
