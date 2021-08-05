@@ -57,26 +57,58 @@
         <!--일일 퀘스트-->
         <scene sceneID="eLl-yw-Zkv">
             <objects>
-                <viewController id="Vww-oE-NOt" sceneMemberID="viewController">
+                <viewController id="Vww-oE-NOt" customClass="QuestViewController" customModule="DailyQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vcU-8Q-fIo">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8월 3일 화요일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST3-ip-LSz">
-                                <rect key="frame" x="105" y="49" width="180" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ygo-Ye-1rJ">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                                <subviews>
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dax-hq-JzM">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="102"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8월 3일 화" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST3-ip-LSz">
+                                                <rect key="frame" x="131.33333333333334" y="46" width="127.66666666666666" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ST3-ip-LSz" firstAttribute="centerX" secondItem="Dax-hq-JzM" secondAttribute="centerX" id="MkX-8Z-07b"/>
+                                            <constraint firstItem="ST3-ip-LSz" firstAttribute="top" secondItem="Dax-hq-JzM" secondAttribute="top" constant="46" id="Zy9-ez-k3O"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHd-1c-gcw">
+                                        <rect key="frame" x="0.0" y="101.99999999999999" width="390" height="131.66666666666663"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hg3-tF-I8S">
+                                        <rect key="frame" x="0.0" y="233.66666666666669" width="390" height="527.33333333333326"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dHd-1c-gcw" firstAttribute="height" secondItem="hg3-tF-I8S" secondAttribute="height" multiplier="0.25" id="SmW-yf-7Yq"/>
+                                    <constraint firstItem="Dax-hq-JzM" firstAttribute="bottom" secondItem="ygo-Ye-1rJ" secondAttribute="bottom" constant="-659" id="z9d-z5-kv3"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aKa-ho-CSW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ST3-ip-LSz" firstAttribute="top" secondItem="aKa-ho-CSW" secondAttribute="top" constant="5" id="4dQ-F9-X9Q"/>
-                            <constraint firstItem="ST3-ip-LSz" firstAttribute="centerX" secondItem="aKa-ho-CSW" secondAttribute="centerX" id="xYX-oC-rKt"/>
+                            <constraint firstItem="ygo-Ye-1rJ" firstAttribute="trailing" secondItem="aKa-ho-CSW" secondAttribute="trailing" id="2qW-Xf-L1b"/>
+                            <constraint firstItem="aKa-ho-CSW" firstAttribute="bottom" secondItem="ygo-Ye-1rJ" secondAttribute="bottom" id="5G1-Jr-AVA"/>
+                            <constraint firstItem="ygo-Ye-1rJ" firstAttribute="leading" secondItem="aKa-ho-CSW" secondAttribute="leading" id="LUv-2B-dFJ"/>
+                            <constraint firstItem="ygo-Ye-1rJ" firstAttribute="top" secondItem="vcU-8Q-fIo" secondAttribute="top" id="Ylt-hk-YMH"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="일일 퀘스트" image="doc.plaintext" catalog="system" id="D3U-CM-0w1"/>
+                    <connections>
+                        <outlet property="currentTimeLabel" destination="ST3-ip-LSz" id="fHj-uC-ChI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bj-uA-QD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,6 +140,12 @@
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
