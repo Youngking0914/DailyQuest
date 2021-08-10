@@ -41,7 +41,7 @@
         <!--설정-->
         <scene sceneID="imb-xB-cKx">
             <objects>
-                <viewController id="g2r-xR-3vc" sceneMemberID="viewController">
+                <viewController id="g2r-xR-3vc" customClass="SettingViewController" customModule="DailyQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9lY-sd-1FL">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,7 +90,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" systemColor="systemGreenColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="1nH-A8-Tf2" customClass="TableViewCell">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="1nH-A8-Tf2">
                                                 <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1nH-A8-Tf2" id="Zm8-E8-4Nd">
@@ -104,9 +104,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wh3-qO-xA1">
-                                                            <rect key="frame" x="19.999999999999996" y="11" width="47.666666666666657" height="22"/>
+                                                            <rect key="frame" x="20" y="11" width="19.666666666666671" height="22"/>
                                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                            <state key="normal" title="Btn" image="circle" catalog="system"/>
+                                                            <state key="normal" image="circle" catalog="system"/>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -137,6 +137,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="일일 퀘스트" image="doc.plaintext" catalog="system" id="D3U-CM-0w1"/>
                     <connections>
+                        <outlet property="QuestTableView" destination="F3A-OT-jBC" id="EI5-SP-lin"/>
                         <outlet property="currentTimeLabel" destination="ST3-ip-LSz" id="fHj-uC-ChI"/>
                     </connections>
                 </viewController>
