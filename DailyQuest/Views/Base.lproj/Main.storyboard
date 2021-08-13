@@ -55,6 +55,41 @@
             <point key="canvasLocation" x="612" y="317"/>
         </scene>
         <!--일일 퀘스트-->
+        <scene sceneID="pWu-kY-mAz">
+            <objects>
+                <viewController id="GDE-4I-dOA" customClass="QuestViewController" customModule="DailyQuest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gkk-aB-fUW">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="426" translatesAutoresizingMaskIntoConstraints="NO" id="2fa-oq-hYy">
+                                <rect key="frame" x="0.0" y="35" width="390" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uiT-Hj-tIM">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Quest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzf-yV-9eS">
+                                                <rect key="frame" x="120" y="167" width="245" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="50"/>
+                                                <color key="textColor" systemColor="systemGreenColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a2r-OE-mXf"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="일일 퀘스트" image="bubble.middle.top.fill" catalog="system" id="FCv-lX-qex"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyH-m6-Unv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686.15384615384608" y="315.63981042654029"/>
+        </scene>
+        <!--일일 퀘스트-->
         <scene sceneID="eLl-yw-Zkv">
             <objects>
                 <viewController id="Vww-oE-NOt" customClass="QuestViewController" customModule="DailyQuest" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,10 +98,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ygo-Ye-1rJ">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="810"/>
                                 <subviews>
                                     <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dax-hq-JzM">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="102"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="151"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8월 3일 화" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST3-ip-LSz">
                                                 <rect key="frame" x="131.33333333333334" y="46" width="127.66666666666666" height="36"/>
@@ -82,11 +117,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHd-1c-gcw">
-                                        <rect key="frame" x="0.0" y="101.99999999999999" width="390" height="131.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="151" width="390" height="131.66666666666663"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F3A-OT-jBC">
-                                        <rect key="frame" x="0.0" y="233.66666666666669" width="390" height="527.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="282.66666666666669" width="390" height="527.33333333333326"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" systemColor="systemGreenColor"/>
                                         <prototypes>
@@ -121,7 +156,7 @@
                                     </tableView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="dHd-1c-gcw" firstAttribute="height" secondItem="F3A-OT-jBC" secondAttribute="height" multiplier="0.25" id="d1Z-5X-S3v"/>
+                                    <constraint firstItem="F3A-OT-jBC" firstAttribute="height" secondItem="dHd-1c-gcw" secondAttribute="height" multiplier="4" id="d1Z-5X-S3v"/>
                                     <constraint firstItem="Dax-hq-JzM" firstAttribute="bottom" secondItem="ygo-Ye-1rJ" secondAttribute="bottom" constant="-659" id="z9d-z5-kv3"/>
                                 </constraints>
                             </stackView>
@@ -143,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bj-uA-QD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-653.84615384615381" y="317.06161137440756"/>
+            <point key="canvasLocation" x="-969" y="-427"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZRR-5s-K8j">
@@ -155,9 +190,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Vww-oE-NOt" kind="relationship" relationship="viewControllers" id="IML-Gz-MUI"/>
-                        <segue destination="Oqm-AM-hwS" kind="relationship" relationship="viewControllers" id="iNV-0p-zh2"/>
-                        <segue destination="g2r-xR-3vc" kind="relationship" relationship="viewControllers" id="lve-BR-dWJ"/>
+                        <segue destination="GDE-4I-dOA" kind="relationship" relationship="viewControllers" id="fL7-9T-3vz"/>
+                        <segue destination="Oqm-AM-hwS" kind="relationship" relationship="viewControllers" id="YFT-80-Jih"/>
+                        <segue destination="g2r-xR-3vc" kind="relationship" relationship="viewControllers" id="o3d-py-3j6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh2-Td-B9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -166,12 +201,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bubble.middle.top.fill" catalog="system" width="128" height="110"/>
         <image name="calendar.badge.exclamationmark" catalog="system" width="128" height="108"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -17,8 +17,7 @@ class QuestViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func showDate() {
         let date = Date() // YYYY-MM-dd EEE 2021-08-05 목요일
-        let dateFormatter = DateFormatter()
-        
+        let dateFormatter = DateFormatter() // 날짜 표시형식 변경
         dateFormatter.locale = Locale(identifier: "ko-KR")
         dateFormatter.dateFormat = "MM월 dd일 E"
         
