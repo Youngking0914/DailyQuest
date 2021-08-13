@@ -125,6 +125,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="action:" destination="GDE-4I-dOA" eventType="editingDidEnd" id="kOz-Sg-HQD"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
