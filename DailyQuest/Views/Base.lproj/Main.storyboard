@@ -164,6 +164,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="일일 퀘스트" image="bubble.middle.top.fill" catalog="system" id="FCv-lX-qex"/>
                     <connections>
+                        <outlet property="inputTextField" destination="kPb-1n-foB" id="4YJ-aa-ZRc"/>
                         <outlet property="questTableView" destination="Uyr-V9-e6I" id="sYZ-6F-SQ4"/>
                     </connections>
                 </viewController>
