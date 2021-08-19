@@ -86,7 +86,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="UZb-Gd-ufa">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="UZb-Gd-ufa">
                                                 <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UZb-Gd-ufa" id="lIM-1L-C05">
@@ -99,17 +99,10 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsK-TQ-qHX">
-                                                            <rect key="frame" x="20" y="11" width="19.666666666666671" height="22"/>
-                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                            <state key="normal" image="circle" catalog="system"/>
-                                                        </button>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="mpg-Qs-NDX" firstAttribute="centerX" secondItem="lIM-1L-C05" secondAttribute="centerX" id="4Ss-hz-IpQ"/>
-                                                        <constraint firstItem="WsK-TQ-qHX" firstAttribute="centerY" secondItem="lIM-1L-C05" secondAttribute="centerY" id="Cod-U0-lZu"/>
                                                         <constraint firstItem="mpg-Qs-NDX" firstAttribute="centerY" secondItem="lIM-1L-C05" secondAttribute="centerY" id="Wj0-EF-VZp"/>
-                                                        <constraint firstItem="WsK-TQ-qHX" firstAttribute="leading" secondItem="lIM-1L-C05" secondAttribute="leading" constant="20" id="awV-bs-W3w"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
