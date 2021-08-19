@@ -14,11 +14,11 @@
 		7B5C8EC326B9007C004E6ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C8EC126B9007C004E6ADE /* Main.storyboard */; };
 		7B5C8EC526B9007E004E6ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C8EC426B9007E004E6ADE /* Assets.xcassets */; };
 		7B5C8EC826B9007E004E6ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C8EC626B9007E004E6ADE /* LaunchScreen.storyboard */; };
-		7B5C8EDF26BBC76F004E6ADE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C8EDE26BBC76F004E6ADE /* TableViewCell.swift */; };
 		7B5C8EE126C23DE1004E6ADE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C8EE026C23DE1004E6ADE /* SettingViewController.swift */; };
 		7B5C8EE326C24EC7004E6ADE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C8EE226C24EC7004E6ADE /* MainViewController.swift */; };
 		7B5C8EE826C64152004E6ADE /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C8EE726C64152004E6ADE /* CalendarViewController.swift */; };
 		7B5C8EEA26C8F9B0004E6ADE /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C8EE926C8F9B0004E6ADE /* TodoList.swift */; };
+		7B5C8EEE26CE3B18004E6ADE /* QuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C8EED26CE3B18004E6ADE /* QuestTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,11 +32,11 @@
 		7B5C8EC426B9007E004E6ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5C8EC726B9007E004E6ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B5C8EC926B9007E004E6ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B5C8EDE26BBC76F004E6ADE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7B5C8EE026C23DE1004E6ADE /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		7B5C8EE226C24EC7004E6ADE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7B5C8EE726C64152004E6ADE /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		7B5C8EE926C8F9B0004E6ADE /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		7B5C8EED26CE3B18004E6ADE /* QuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestTableViewCell.swift; sourceTree = "<group>"; };
 		CDC63A666116C17A3B9D2F62 /* Pods-DailyQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyQuest.debug.xcconfig"; path = "Target Support Files/Pods-DailyQuest/Pods-DailyQuest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,6 @@
 		7B5C8EAF26B9007C004E6ADE = {
 			isa = PBXGroup;
 			children = (
-				7B5C8EDE26BBC76F004E6ADE /* TableViewCell.swift */,
 				7B5C8EBA26B9007C004E6ADE /* DailyQuest */,
 				7B5C8EB926B9007C004E6ADE /* Products */,
 				B0D37B6C2BD29B6F08D49A5B /* Pods */,
@@ -133,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5C8EE926C8F9B0004E6ADE /* TodoList.swift */,
+				7B5C8EED26CE3B18004E6ADE /* QuestTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5C8EEE26CE3B18004E6ADE /* QuestTableViewCell.swift in Sources */,
 				7B5C8EE326C24EC7004E6ADE /* MainViewController.swift in Sources */,
-				7B5C8EDF26BBC76F004E6ADE /* TableViewCell.swift in Sources */,
 				7B5C8EC026B9007C004E6ADE /* ViewController.swift in Sources */,
 				7B5C8EEA26C8F9B0004E6ADE /* TodoList.swift in Sources */,
 				7B5C8EBC26B9007C004E6ADE /* AppDelegate.swift in Sources */,

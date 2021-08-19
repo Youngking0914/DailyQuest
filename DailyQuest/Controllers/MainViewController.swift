@@ -11,14 +11,13 @@ import UIKit
 var list = [TodoList]()
 
 class MainViewController: UIViewController {
-    
     @IBOutlet weak var questTableView: UITableView!
     @IBOutlet weak var inputTextField: UITextField!
     
     override func viewDidLoad() {
-        questTableView.dataSource = self
-        questTableView.delegate = self
-        inputTextField.delegate = self
+        self.questTableView.dataSource = self
+        self.questTableView.delegate = self
+        self.inputTextField.delegate = self
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -42,11 +41,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     // n번째 섹션의 m번째 row를 그리는데 필요한 cell을 반환하는 메소드입니다
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell: QuestTableViewCell = tableView.dequeueReusableCell(withIdentifier: "QuestTableViewCell", for: indexPath) as! QuestTableViewCell
         // 테이블 뷰 셀에 TodoList 값 넣기
-        //cell.textLabel?.text = list[indexPath.row].content
+        cell.contentLabel.text = list[indexPath.row].content
         cell.accessoryType = list[indexPath.row].isComplete == true ? .checkmark : .none
-        cell.accessibilityLabel?.append(list[indexPath.row].content!)
         return cell
     }
 }

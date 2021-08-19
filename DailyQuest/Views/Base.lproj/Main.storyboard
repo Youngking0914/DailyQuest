@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--달성 현황-->
+        <!--CalendarViewContoller-->
         <scene sceneID="AkT-gn-jjY">
             <objects>
-                <viewController id="Oqm-AM-hwS" customClass="CalendarViewController" customModule="DailyQuest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CalendarViewContoller" id="Oqm-AM-hwS" customClass="CalendarViewController" customModule="DailyQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qbp-qj-6VH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="316.74107142857139"/>
         </scene>
-        <!--설정-->
+        <!--SettingViewController-->
         <scene sceneID="imb-xB-cKx">
             <objects>
-                <viewController id="g2r-xR-3vc" customClass="SettingViewController" customModule="DailyQuest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SettingViewController" id="g2r-xR-3vc" customClass="SettingViewController" customModule="DailyQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9lY-sd-1FL">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="612" y="317"/>
         </scene>
-        <!--일일 퀘스트-->
+        <!--MainViewController-->
         <scene sceneID="pWu-kY-mAz">
             <objects>
-                <viewController id="GDE-4I-dOA" customClass="MainViewController" customModule="DailyQuest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MainViewController" id="GDE-4I-dOA" customClass="MainViewController" customModule="DailyQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gkk-aB-fUW">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="UZb-Gd-ufa">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestTableViewCell" id="UZb-Gd-ufa" customClass="QuestTableViewCell" customModule="DailyQuest" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UZb-Gd-ufa" id="lIM-1L-C05">
@@ -105,6 +105,9 @@
                                                         <constraint firstItem="mpg-Qs-NDX" firstAttribute="centerY" secondItem="lIM-1L-C05" secondAttribute="centerY" id="Wj0-EF-VZp"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="contentLabel" destination="mpg-Qs-NDX" id="khl-Ds-yQw"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -158,7 +161,7 @@
                     <tabBarItem key="tabBarItem" title="일일 퀘스트" image="bubble.middle.top.fill" catalog="system" id="FCv-lX-qex"/>
                     <connections>
                         <outlet property="inputTextField" destination="kPb-1n-foB" id="4YJ-aa-ZRc"/>
-                        <outlet property="questTableView" destination="Uyr-V9-e6I" id="sYZ-6F-SQ4"/>
+                        <outlet property="questTableView" destination="Uyr-V9-e6I" id="96d-kU-K99"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyH-m6-Unv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -201,7 +204,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" systemColor="systemGreenColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="1nH-A8-Tf2">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="1nH-A8-Tf2" customClass="QuestTableViewCell" customModule="DailyQuest" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1nH-A8-Tf2" id="Zm8-E8-4Nd">
