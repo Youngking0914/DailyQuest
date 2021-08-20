@@ -54,12 +54,13 @@ extension MainViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // return 키를 입력한 textField 가 inputTextField 일 경우
         if textField == inputTextField {
-            if let text = inputTextField.text {
+            if var text = inputTextField.text {
                 // textField 안에 내용이 있을 경우에만
                 if !text.isEmpty {
                     print(text + " return") // 테스트용
                     let item = TodoList(content: String(text), isComplete: false)
                     list.append(item)
+                    text = ""
                 }
             }
             // 테이블 뷰 reload 새로고침

@@ -10,6 +10,7 @@ import UIKit
 class QuestTableViewCell: UITableViewCell {
     @IBOutlet weak var contentLabel: UILabel!
     
+    @IBOutlet weak var clearBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +21,4 @@ class QuestTableViewCell: UITableViewCell {
         print("selected")
         // Configure the view for the selected state
     }
-
 }
