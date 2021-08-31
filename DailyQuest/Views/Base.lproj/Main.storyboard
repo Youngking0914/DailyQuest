@@ -101,6 +101,9 @@
                                                             <state key="normal">
                                                                 <imageReference key="image" image="circle" catalog="system" symbolScale="large"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="tabDoneBtn:" destination="UZb-Gd-ufa" eventType="touchUpInside" id="LKj-0C-m3c"/>
+                                                            </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테스트 문자열" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpg-Qs-NDX">
                                                             <rect key="frame" x="55.333333333333336" y="12.333333333333336" width="108.66666666666666" height="24"/>
@@ -114,6 +117,17 @@
                                                             <state key="normal">
                                                                 <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
                                                             </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJT-Xf-Sk1">
+                                                            <rect key="frame" x="339" y="14" width="21" height="22"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" red="0.1647058874" green="0.62352943419999995" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <state key="normal">
+                                                                <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="tabClearBtn:" destination="UZb-Gd-ufa" eventType="touchUpInside" id="iBm-DG-uGT"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -129,7 +143,9 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="clearBtn" destination="zJT-Xf-Sk1" id="AP8-uX-spL"/>
                                                     <outlet property="contentLabel" destination="mpg-Qs-NDX" id="khl-Ds-yQw"/>
+                                                    <outlet property="doneBtn" destination="8pq-Ah-rCI" id="x88-iv-E4F"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

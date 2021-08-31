@@ -101,6 +101,7 @@
 				7B5C8EE226C24EC7004E6ADE /* MainViewController.swift */,
 				7B78E58E26D8878B00FCC908 /* MainViewController+UITableViewDelegate.swift */,
 				7B78E58C26D87F3100FCC908 /* MainViewController+UITextFieldDelegate.swift */,
+				7B5C8EED26CE3B18004E6ADE /* QuestTableViewCell.swift */,
 				7B5C8EE726C64152004E6ADE /* CalendarViewController.swift */,
 				7B5C8EE026C23DE1004E6ADE /* SettingViewController.swift */,
 				7B5C8EBF26B9007C004E6ADE /* ViewController.swift */,
@@ -139,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				7B5C8EE926C8F9B0004E6ADE /* TodoList.swift */,
-				7B5C8EED26CE3B18004E6ADE /* QuestTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

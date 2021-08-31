@@ -7,9 +7,6 @@
 
 import UIKit
 
-// 투두리스트를 담을 전역변수
-var list = [TodoList]()
-
 class MainViewController: UIViewController {
     @IBOutlet weak var questTableView: UITableView!
     @IBOutlet weak var inputTextField: UITextField!
