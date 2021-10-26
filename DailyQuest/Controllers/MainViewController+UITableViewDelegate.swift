@@ -19,7 +19,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         // 테이블 뷰 셀에 TodoList 값 넣기
         cell.contentLabel.text = todoList[indexPath.row].content
         cell.doneBtn.isSelected = todoList[indexPath.row].isComplete
-        //cell.accessoryType = todoList[indexPath.row].isComplete == true ? .checkmark : .none
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
